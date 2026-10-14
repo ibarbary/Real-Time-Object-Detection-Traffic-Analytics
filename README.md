@@ -122,25 +122,3 @@ Check code quality with Ruff:
 ```bash
 python -m ruff check src tests app.py run_video.py
 ```
-
-## Limitations
-
-- Tracking accuracy depends on video quality, camera angle, lighting, and occlusion.
-- A vehicle must cross the configured line to contribute to the traffic-volume count.
-- A vehicle may receive a new tracking ID if tracking is interrupted.
-- Processing speed depends on video resolution, frame stride, hardware, and model configuration.
-
-## Future Improvements
-
-- Evaluate detection and tracking performance on labeled traffic videos.
-- Add vehicle counts over time and traffic-flow visualizations.
-- Support configurable counting lines and multiple counting zones.
-- Improve tracking robustness and benchmark GPU versus CPU performance.
-
-## Author
-
-**Alex Barbary**
-
-MSc Data Science student at Hamburg University of Technology (TUHH).
-
-GitHub: [@ibarbary](https://github.com/ibarbary)
